@@ -11,7 +11,6 @@
 	GuestBookVo guestVo = new GuestBookVo(no, password);
 	
 	guestDao.delete(guestVo);
-	
 
 	response.sendRedirect("./addList.jsp");
 %>

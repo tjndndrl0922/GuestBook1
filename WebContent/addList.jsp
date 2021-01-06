@@ -5,6 +5,7 @@
 <%@ page import="com.javaex.vo.GuestBookVo"%>
 
 <% 
+	request.setCharacterEncoding("UTF-8");
 	GuestBookDao guestDao = new GuestBookDao();
 	List<GuestBookVo> guestList = guestDao.getList();
 	
